@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(VERBOSE "verifying file...
-       file='C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip'")
+       file='C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip'")
 
-  file("" "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip" actual_value)
+  file("" "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(VERBOSE " hash of
-    C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip
+    C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip
   does not match expected value
     expected: ''
       actual: '${actual_value}'")
@@ -71,32 +71,32 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip")
+if(EXISTS "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(VERBOSE "File already exists and hash match (skip download):
-  file='C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip'
+  file='C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip'
   =''"
       )
       return()
     else()
       message(VERBOSE "File already exists but hash mismatch. Removing...")
-      file(REMOVE "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip")
+      file(REMOVE "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip")
     endif()
   else()
     message(VERBOSE "File already exists but no hash specified (use URL_HASH):
-  file='C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip'
+  file='C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip")
+    file(REMOVE "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(VERBOSE "Downloading...
-   dst='C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip'
+   dst='C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -119,7 +119,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip"
+        "${url}" "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -136,7 +136,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(VERBOSE "Hash mismatch, removing...")
-          file(REMOVE "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip")
+          file(REMOVE "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/master.zip")
         else()
           message(VERBOSE "Downloading... done")
           return()

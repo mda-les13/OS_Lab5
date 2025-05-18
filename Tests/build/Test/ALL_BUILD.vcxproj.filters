@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\src\Test\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\src\Test\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

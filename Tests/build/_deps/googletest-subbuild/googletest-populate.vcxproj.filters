@@ -1,44 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\3f6e8e0889890111dabf2831e3c27899\googletest-populate-mkdir.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\f43851b0d6cca930d812aa84f296d3ab\googletest-populate-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\3f6e8e0889890111dabf2831e3c27899\googletest-populate-download.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\f43851b0d6cca930d812aa84f296d3ab\googletest-populate-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\3f6e8e0889890111dabf2831e3c27899\googletest-populate-update.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\f43851b0d6cca930d812aa84f296d3ab\googletest-populate-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\3f6e8e0889890111dabf2831e3c27899\googletest-populate-patch.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\f43851b0d6cca930d812aa84f296d3ab\googletest-populate-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\3f6e8e0889890111dabf2831e3c27899\googletest-populate-configure.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\f43851b0d6cca930d812aa84f296d3ab\googletest-populate-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\3f6e8e0889890111dabf2831e3c27899\googletest-populate-build.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\f43851b0d6cca930d812aa84f296d3ab\googletest-populate-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\3f6e8e0889890111dabf2831e3c27899\googletest-populate-install.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\f43851b0d6cca930d812aa84f296d3ab\googletest-populate-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\3f6e8e0889890111dabf2831e3c27899\googletest-populate-test.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\f43851b0d6cca930d812aa84f296d3ab\googletest-populate-test.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\588ffea2b3c905538911846a1052b815\googletest-populate-complete.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\59ea8800ddb08181113bbc8c4e45515e\googletest-populate-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\b58367655faa808eecd49a881c06ecaa\googletest-populate.rule">
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\9230a4b6996207ff90a483154b8808b4\googletest-populate.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\Ivan\Desktop\Tests\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+    <None Include="C:\Users\Ivan\Documents\GitHub\OS_Lab5\Tests\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{E05A63D1-687C-342F-B933-29259740E0D5}</UniqueIdentifier>
+      <UniqueIdentifier>{65983E70-BFE8-3A29-9F72-E620C9AEF0FC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

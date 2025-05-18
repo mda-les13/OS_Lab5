@@ -9,8 +9,8 @@ C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake
-C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/CMakeLists.txt
-C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/cmake/Config.cmake.in
-C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/cmake/gtest.pc.in
-C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
-C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake
+C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/CMakeLists.txt
+C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/cmake/Config.cmake.in
+C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/cmake/gtest.pc.in
+C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
+C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake

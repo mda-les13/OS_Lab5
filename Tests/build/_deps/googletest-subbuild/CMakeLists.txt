@@ -20,8 +20,8 @@ project(googletest-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(googletest-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "TRUE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/google/googletest/archive/refs/heads/master.zip"
-                    SOURCE_DIR          "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src"
-                    BINARY_DIR          "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-build"
+                    SOURCE_DIR          "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src"
+                    BINARY_DIR          "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/b58367655faa808eecd49a881c06ecaa/googletest-populate.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/9230a4b6996207ff90a483154b8808b4/googletest-populate.rule"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/588ffea2b3c905538911846a1052b815/googletest-populate-complete.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/59ea8800ddb08181113bbc8c4e45515e/googletest-populate-complete.rule"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/3f6e8e0889890111dabf2831e3c27899/googletest-populate-build.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/f43851b0d6cca930d812aa84f296d3ab/googletest-populate-build.rule"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/3f6e8e0889890111dabf2831e3c27899/googletest-populate-configure.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/f43851b0d6cca930d812aa84f296d3ab/googletest-populate-configure.rule"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/3f6e8e0889890111dabf2831e3c27899/googletest-populate-download.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/f43851b0d6cca930d812aa84f296d3ab/googletest-populate-download.rule"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/3f6e8e0889890111dabf2831e3c27899/googletest-populate-install.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/f43851b0d6cca930d812aa84f296d3ab/googletest-populate-install.rule"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/3f6e8e0889890111dabf2831e3c27899/googletest-populate-mkdir.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/f43851b0d6cca930d812aa84f296d3ab/googletest-populate-mkdir.rule"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/3f6e8e0889890111dabf2831e3c27899/googletest-populate-patch.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/f43851b0d6cca930d812aa84f296d3ab/googletest-populate-patch.rule"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/3f6e8e0889890111dabf2831e3c27899/googletest-populate-test.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/f43851b0d6cca930d812aa84f296d3ab/googletest-populate-test.rule"
 		},
 		{
-			"file" : "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/3f6e8e0889890111dabf2831e3c27899/googletest-populate-update.rule"
+			"file" : "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/f43851b0d6cca930d812aa84f296d3ab/googletest-populate-update.rule"
 		}
 	],
 	"target" : 

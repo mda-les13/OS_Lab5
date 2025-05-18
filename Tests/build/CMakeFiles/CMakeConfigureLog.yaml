@@ -18,15 +18,15 @@ events:
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler:  
-      Build flags: 
+      Build flags: /DWIN32;/D_WINDOWS;/W3
       Id flags:  
       
       The output was:
       0
       Р’РµСЂСЃРёСЏ MSBuild 17.13.9+e0f243f1e РґР»СЏ .NET Framework
-      РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 16:05:49.
+      РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 21:17:07.
       
-      РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+      РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
       PrepareForBuild:
         РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "Debug\\".
         РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
@@ -42,13 +42,13 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe
       AppLocalFromInstalled:
-        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
         "pwsh.exe" РЅРµ СЏРІР»СЏРµС‚СЃСЏ РІРЅСѓС‚СЂРµРЅРЅРµР№ РёР»Рё РІРЅРµС€РЅРµР№
         РєРѕРјР°РЅРґРѕР№, РёСЃРїРѕР»РЅСЏРµРјРѕР№ РїСЂРѕРіСЂР°РјРјРѕР№ РёР»Рё РїР°РєРµС‚РЅС‹Рј С„Р°Р№Р»РѕРј.
-        Р’С‹С…РѕРґ РёР· РєРѕРјР°РЅРґС‹ "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" СЃ РєРѕРґРѕРј 9009.
-        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        Р’С‹С…РѕРґ РёР· РєРѕРјР°РЅРґС‹ "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" СЃ РєРѕРґРѕРј 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -56,13 +56,13 @@ events:
       FinalizeBuildStatus:
         Р¤Р°Р№Р» "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
         РћР±СЂР°С‰РµРЅРёРµ Рє "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+      РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
       
       РЎР±РѕСЂРєР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°.
           РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
           РћС€РёР±РѕРє: 0
       
-      РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:01.98
+      РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:01.64
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -70,7 +70,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/3.31.5/CompilerIdC/CompilerIdC.exe
+        C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/3.31.5/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
@@ -82,15 +82,15 @@ events:
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler:  
-      Build flags: 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
       Id flags:  
       
       The output was:
       0
       Р’РµСЂСЃРёСЏ MSBuild 17.13.9+e0f243f1e РґР»СЏ .NET Framework
-      РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 16:05:52.
+      РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 21:17:09.
       
-      РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+      РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
       PrepareForBuild:
         РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "Debug\\".
         РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
@@ -106,13 +106,13 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe
       AppLocalFromInstalled:
-        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
         "pwsh.exe" РЅРµ СЏРІР»СЏРµС‚СЃСЏ РІРЅСѓС‚СЂРµРЅРЅРµР№ РёР»Рё РІРЅРµС€РЅРµР№
         РєРѕРјР°РЅРґРѕР№, РёСЃРїРѕР»РЅСЏРµРјРѕР№ РїСЂРѕРіСЂР°РјРјРѕР№ РёР»Рё РїР°РєРµС‚РЅС‹Рј С„Р°Р№Р»РѕРј.
-        Р’С‹С…РѕРґ РёР· РєРѕРјР°РЅРґС‹ "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" СЃ РєРѕРґРѕРј 9009.
-        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        Р’С‹С…РѕРґ РёР· РєРѕРјР°РЅРґС‹ "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" СЃ РєРѕРґРѕРј 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -120,13 +120,13 @@ events:
       FinalizeBuildStatus:
         Р¤Р°Р№Р» "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
         РћР±СЂР°С‰РµРЅРёРµ Рє "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+      РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
       
       РЎР±РѕСЂРєР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°.
           РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
           РћС€РёР±РѕРє: 0
       
-      РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:01.96
+      РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:01.61
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -134,7 +134,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/3.31.5/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/3.31.5/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -145,8 +145,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-x7oo2c"
-      binary: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-x7oo2c"
+      source: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-yhv9v6"
+      binary: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-yhv9v6"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -155,49 +155,49 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-x7oo2c'
+        Change Dir: 'C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-yhv9v6'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_208a1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9632f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Р’РµСЂСЃРёСЏ MSBuild 17.13.9+e0f243f1e РґР»СЏ .NET Framework
-        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 16:05:54.
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 21:17:11.
         
-        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x7oo2c\\cmTC_208a1.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhv9v6\\cmTC_9632f.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
         PrepareForBuild:
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_208a1.dir\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_9632f.dir\\Debug\\".
           РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x7oo2c\\Debug\\".
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_208a1.dir\\Debug\\cmTC_208a1.tlog\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhv9v6\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_9632f.dir\\Debug\\cmTC_9632f.tlog\\".
         InitializeBuildStatus:
-          РЎРѕР·РґР°РЅРёРµ "cmTC_208a1.dir\\Debug\\cmTC_208a1.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
-          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_208a1.dir\\Debug\\cmTC_208a1.tlog\\unsuccessfulbuild".
+          РЎРѕР·РґР°РЅРёРµ "cmTC_9632f.dir\\Debug\\cmTC_9632f.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_9632f.dir\\Debug\\cmTC_9632f.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_208a1.dir\\Debug\\\\" /Fd"cmTC_208a1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9632f.dir\\Debug\\\\" /Fd"cmTC_9632f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.43.34808 РґР»СЏ x64
           (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
-          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_208a1.dir\\Debug\\\\" /Fd"cmTC_208a1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9632f.dir\\Debug\\\\" /Fd"cmTC_9632f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x7oo2c\\Debug\\cmTC_208a1.exe" /INCREMENTAL /ILK:"cmTC_208a1.dir\\Debug\\cmTC_208a1.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-x7oo2c/Debug/cmTC_208a1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-x7oo2c/Debug/cmTC_208a1.lib" /MACHINE:X64  /machine:x64 cmTC_208a1.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_208a1.vcxproj -> C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x7oo2c\\Debug\\cmTC_208a1.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhv9v6\\Debug\\cmTC_9632f.exe" /INCREMENTAL /ILK:"cmTC_9632f.dir\\Debug\\cmTC_9632f.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-yhv9v6/Debug/cmTC_9632f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-yhv9v6/Debug/cmTC_9632f.lib" /MACHINE:X64  /machine:x64 cmTC_9632f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_9632f.vcxproj -> C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhv9v6\\Debug\\cmTC_9632f.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x7oo2c\\Debug\\cmTC_208a1.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_208a1.dir\\Debug\\cmTC_208a1.tlog\\cmTC_208a1.write.1u.tlog" "cmTC_208a1.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhv9v6\\Debug\\cmTC_9632f.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_9632f.dir\\Debug\\cmTC_9632f.tlog\\cmTC_9632f.write.1u.tlog" "cmTC_9632f.dir\\Debug\\vcpkg.applocal.log"
           "pwsh.exe" РЅРµ СЏРІР»СЏРµС‚СЃСЏ РІРЅСѓС‚СЂРµРЅРЅРµР№ РёР»Рё РІРЅРµС€РЅРµР№
           РєРѕРјР°РЅРґРѕР№, РёСЃРїРѕР»РЅСЏРµРјРѕР№ РїСЂРѕРіСЂР°РјРјРѕР№ РёР»Рё РїР°РєРµС‚РЅС‹Рј С„Р°Р№Р»РѕРј.
-          Р’С‹С…РѕРґ РёР· РєРѕРјР°РЅРґС‹ "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x7oo2c\\Debug\\cmTC_208a1.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_208a1.dir\\Debug\\cmTC_208a1.tlog\\cmTC_208a1.write.1u.tlog" "cmTC_208a1.dir\\Debug\\vcpkg.applocal.log"" СЃ РєРѕРґРѕРј 9009.
-          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x7oo2c\\Debug\\cmTC_208a1.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_208a1.dir\\Debug\\cmTC_208a1.tlog\\cmTC_208a1.write.1u.tlog" "cmTC_208a1.dir\\Debug\\vcpkg.applocal.log"
+          Р’С‹С…РѕРґ РёР· РєРѕРјР°РЅРґС‹ "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhv9v6\\Debug\\cmTC_9632f.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_9632f.dir\\Debug\\cmTC_9632f.tlog\\cmTC_9632f.write.1u.tlog" "cmTC_9632f.dir\\Debug\\vcpkg.applocal.log"" СЃ РєРѕРґРѕРј 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhv9v6\\Debug\\cmTC_9632f.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_9632f.dir\\Debug\\cmTC_9632f.tlog\\cmTC_9632f.write.1u.tlog" "cmTC_9632f.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Р¤Р°Р№Р» "cmTC_208a1.dir\\Debug\\cmTC_208a1.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
-          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_208a1.dir\\Debug\\cmTC_208a1.tlog\\cmTC_208a1.lastbuildstate".
-        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x7oo2c\\cmTC_208a1.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+          Р¤Р°Р№Р» "cmTC_9632f.dir\\Debug\\cmTC_9632f.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_9632f.dir\\Debug\\cmTC_9632f.tlog\\cmTC_9632f.lastbuildstate".
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhv9v6\\cmTC_9632f.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
         
         РЎР±РѕСЂРєР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°.
             РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
             РћС€РёР±РѕРє: 0
         
-        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:01.84
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:01.61
         
       exitCode: 0
   -
@@ -237,8 +237,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-4mkioi"
-      binary: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-4mkioi"
+      source: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lg8e7m"
+      binary: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lg8e7m"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -248,49 +248,49 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-4mkioi'
+        Change Dir: 'C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lg8e7m'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2516e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_44bad.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Р’РµСЂСЃРёСЏ MSBuild 17.13.9+e0f243f1e РґР»СЏ .NET Framework
-        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 16:05:57.
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 21:17:13.
         
-        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mkioi\\cmTC_2516e.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lg8e7m\\cmTC_44bad.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
         PrepareForBuild:
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_2516e.dir\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_44bad.dir\\Debug\\".
           РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mkioi\\Debug\\".
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_2516e.dir\\Debug\\cmTC_2516e.tlog\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lg8e7m\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_44bad.dir\\Debug\\cmTC_44bad.tlog\\".
         InitializeBuildStatus:
-          РЎРѕР·РґР°РЅРёРµ "cmTC_2516e.dir\\Debug\\cmTC_2516e.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
-          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_2516e.dir\\Debug\\cmTC_2516e.tlog\\unsuccessfulbuild".
+          РЎРѕР·РґР°РЅРёРµ "cmTC_44bad.dir\\Debug\\cmTC_44bad.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_44bad.dir\\Debug\\cmTC_44bad.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2516e.dir\\Debug\\\\" /Fd"cmTC_2516e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_44bad.dir\\Debug\\\\" /Fd"cmTC_44bad.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.43.34808 РґР»СЏ x64
           (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
-          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2516e.dir\\Debug\\\\" /Fd"cmTC_2516e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_44bad.dir\\Debug\\\\" /Fd"cmTC_44bad.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mkioi\\Debug\\cmTC_2516e.exe" /INCREMENTAL /ILK:"cmTC_2516e.dir\\Debug\\cmTC_2516e.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-4mkioi/Debug/cmTC_2516e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-4mkioi/Debug/cmTC_2516e.lib" /MACHINE:X64  /machine:x64 cmTC_2516e.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_2516e.vcxproj -> C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mkioi\\Debug\\cmTC_2516e.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lg8e7m\\Debug\\cmTC_44bad.exe" /INCREMENTAL /ILK:"cmTC_44bad.dir\\Debug\\cmTC_44bad.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lg8e7m/Debug/cmTC_44bad.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lg8e7m/Debug/cmTC_44bad.lib" /MACHINE:X64  /machine:x64 cmTC_44bad.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_44bad.vcxproj -> C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lg8e7m\\Debug\\cmTC_44bad.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mkioi\\Debug\\cmTC_2516e.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2516e.dir\\Debug\\cmTC_2516e.tlog\\cmTC_2516e.write.1u.tlog" "cmTC_2516e.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lg8e7m\\Debug\\cmTC_44bad.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_44bad.dir\\Debug\\cmTC_44bad.tlog\\cmTC_44bad.write.1u.tlog" "cmTC_44bad.dir\\Debug\\vcpkg.applocal.log"
           "pwsh.exe" РЅРµ СЏРІР»СЏРµС‚СЃСЏ РІРЅСѓС‚СЂРµРЅРЅРµР№ РёР»Рё РІРЅРµС€РЅРµР№
           РєРѕРјР°РЅРґРѕР№, РёСЃРїРѕР»РЅСЏРµРјРѕР№ РїСЂРѕРіСЂР°РјРјРѕР№ РёР»Рё РїР°РєРµС‚РЅС‹Рј С„Р°Р№Р»РѕРј.
-          Р’С‹С…РѕРґ РёР· РєРѕРјР°РЅРґС‹ "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mkioi\\Debug\\cmTC_2516e.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2516e.dir\\Debug\\cmTC_2516e.tlog\\cmTC_2516e.write.1u.tlog" "cmTC_2516e.dir\\Debug\\vcpkg.applocal.log"" СЃ РєРѕРґРѕРј 9009.
-          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mkioi\\Debug\\cmTC_2516e.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2516e.dir\\Debug\\cmTC_2516e.tlog\\cmTC_2516e.write.1u.tlog" "cmTC_2516e.dir\\Debug\\vcpkg.applocal.log"
+          Р’С‹С…РѕРґ РёР· РєРѕРјР°РЅРґС‹ "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lg8e7m\\Debug\\cmTC_44bad.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_44bad.dir\\Debug\\cmTC_44bad.tlog\\cmTC_44bad.write.1u.tlog" "cmTC_44bad.dir\\Debug\\vcpkg.applocal.log"" СЃ РєРѕРґРѕРј 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Ivan\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lg8e7m\\Debug\\cmTC_44bad.exe" "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_44bad.dir\\Debug\\cmTC_44bad.tlog\\cmTC_44bad.write.1u.tlog" "cmTC_44bad.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Р¤Р°Р№Р» "cmTC_2516e.dir\\Debug\\cmTC_2516e.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
-          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_2516e.dir\\Debug\\cmTC_2516e.tlog\\cmTC_2516e.lastbuildstate".
-        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mkioi\\cmTC_2516e.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+          Р¤Р°Р№Р» "cmTC_44bad.dir\\Debug\\cmTC_44bad.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_44bad.dir\\Debug\\cmTC_44bad.tlog\\cmTC_44bad.lastbuildstate".
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lg8e7m\\cmTC_44bad.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
         
         РЎР±РѕСЂРєР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°.
             РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
             РћС€РёР±РѕРє: 0
         
-        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:01.80
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:01.63
         
       exitCode: 0
   -
@@ -321,10 +321,6 @@ events:
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.43.34808.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
-...
-
----
-events:
   -
     kind: "try_compile-v1"
     backtrace:
@@ -332,13 +328,13 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
-      - "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+      - "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-gpo059"
-      binary: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-gpo059"
+      source: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-134bof"
+      binary: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-134bof"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -347,43 +343,43 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-gpo059'
+        Change Dir: 'C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-134bof'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9ff22.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_15c90.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Р’РµСЂСЃРёСЏ MSBuild 17.13.9+e0f243f1e РґР»СЏ .NET Framework
-        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 16:30:28.
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 21:17:20.
         
-        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\cmTC_9ff22.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\cmTC_15c90.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
         PrepareForBuild:
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_9ff22.dir\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_15c90.dir\\Debug\\".
           РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\Debug\\".
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_9ff22.dir\\Debug\\cmTC_9ff22.tlog\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_15c90.dir\\Debug\\cmTC_15c90.tlog\\".
         InitializeBuildStatus:
-          РЎРѕР·РґР°РЅРёРµ "cmTC_9ff22.dir\\Debug\\cmTC_9ff22.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
-          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_9ff22.dir\\Debug\\cmTC_9ff22.tlog\\unsuccessfulbuild".
+          РЎРѕР·РґР°РЅРёРµ "cmTC_15c90.dir\\Debug\\cmTC_15c90.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_15c90.dir\\Debug\\cmTC_15c90.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9ff22.dir\\Debug\\\\" /Fd"cmTC_9ff22.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_15c90.dir\\Debug\\\\" /Fd"cmTC_15c90.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\src.c"
           РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.43.34808 РґР»СЏ x64
           (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
-          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9ff22.dir\\Debug\\\\" /Fd"cmTC_9ff22.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\src.c"
+          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_15c90.dir\\Debug\\\\" /Fd"cmTC_15c90.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\src.c"
           src.c
-        C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\src.c(1,10): error C1083: РќРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РІРєР»СЋС‡РµРЅРёРµ: pthread.h: No such file or directory, [C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\cmTC_9ff22.vcxproj]
-        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\cmTC_9ff22.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) СЃ РѕС€РёР±РєРѕР№.
+        C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\src.c(1,10): error C1083: РќРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РІРєР»СЋС‡РµРЅРёРµ: pthread.h: No such file or directory, [C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\cmTC_15c90.vcxproj]
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\cmTC_15c90.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) СЃ РѕС€РёР±РєРѕР№.
         
         РћС€РёР±РєР° СЃР±РѕСЂРєРё.
         
-        "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\cmTC_9ff22.vcxproj" (С†РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) (1) ->
+        "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\cmTC_15c90.vcxproj" (С†РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) (1) ->
         (Р¦РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ ClCompile) -> 
-          C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\src.c(1,10): error C1083: РќРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РІРєР»СЋС‡РµРЅРёРµ: pthread.h: No such file or directory, [C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpo059\\cmTC_9ff22.vcxproj]
+          C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\src.c(1,10): error C1083: РќРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РІРєР»СЋС‡РµРЅРёРµ: pthread.h: No such file or directory, [C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-134bof\\cmTC_15c90.vcxproj]
         
             РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
             РћС€РёР±РѕРє: 1
         
-        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.97
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.67
         
       exitCode: 1
   -
@@ -392,13 +388,13 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:175 (_threads_check_lib)"
-      - "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
-      - "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+      - "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lq30v4"
-      binary: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lq30v4"
+      source: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-2jf4l8"
+      binary: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-2jf4l8"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -407,45 +403,45 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lq30v4'
+        Change Dir: 'C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-2jf4l8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_168a8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_72449.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Р’РµСЂСЃРёСЏ MSBuild 17.13.9+e0f243f1e РґР»СЏ .NET Framework
-        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 16:30:30.
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 21:17:21.
         
-        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lq30v4\\cmTC_168a8.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2jf4l8\\cmTC_72449.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
         PrepareForBuild:
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_168a8.dir\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_72449.dir\\Debug\\".
           РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lq30v4\\Debug\\".
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_168a8.dir\\Debug\\cmTC_168a8.tlog\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2jf4l8\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_72449.dir\\Debug\\cmTC_72449.tlog\\".
         InitializeBuildStatus:
-          РЎРѕР·РґР°РЅРёРµ "cmTC_168a8.dir\\Debug\\cmTC_168a8.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
-          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_168a8.dir\\Debug\\cmTC_168a8.tlog\\unsuccessfulbuild".
+          РЎРѕР·РґР°РЅРёРµ "cmTC_72449.dir\\Debug\\cmTC_72449.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_72449.dir\\Debug\\cmTC_72449.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_168a8.dir\\Debug\\\\" /Fd"cmTC_168a8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lq30v4\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_72449.dir\\Debug\\\\" /Fd"cmTC_72449.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2jf4l8\\CheckFunctionExists.c"
           РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.43.34808 РґР»СЏ x64
           (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
-          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_168a8.dir\\Debug\\\\" /Fd"cmTC_168a8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lq30v4\\CheckFunctionExists.c"
+          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_72449.dir\\Debug\\\\" /Fd"cmTC_72449.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2jf4l8\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lq30v4\\Debug\\cmTC_168a8.exe" /INCREMENTAL /ILK:"cmTC_168a8.dir\\Debug\\cmTC_168a8.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lq30v4/Debug/cmTC_168a8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-lq30v4/Debug/cmTC_168a8.lib" /MACHINE:X64  /machine:x64 cmTC_168a8.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthreads.lib" [C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lq30v4\\cmTC_168a8.vcxproj]
-        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lq30v4\\cmTC_168a8.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) СЃ РѕС€РёР±РєРѕР№.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2jf4l8\\Debug\\cmTC_72449.exe" /INCREMENTAL /ILK:"cmTC_72449.dir\\Debug\\cmTC_72449.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-2jf4l8/Debug/cmTC_72449.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-2jf4l8/Debug/cmTC_72449.lib" /MACHINE:X64  /machine:x64 cmTC_72449.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthreads.lib" [C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2jf4l8\\cmTC_72449.vcxproj]
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2jf4l8\\cmTC_72449.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) СЃ РѕС€РёР±РєРѕР№.
         
         РћС€РёР±РєР° СЃР±РѕСЂРєРё.
         
-        "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lq30v4\\cmTC_168a8.vcxproj" (С†РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) (1) ->
+        "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2jf4l8\\cmTC_72449.vcxproj" (С†РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) (1) ->
         (Р¦РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ Link) -> 
-          LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthreads.lib" [C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lq30v4\\cmTC_168a8.vcxproj]
+          LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthreads.lib" [C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2jf4l8\\cmTC_72449.vcxproj]
         
             РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
             РћС€РёР±РѕРє: 1
         
-        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.81
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.75
         
       exitCode: 1
   -
@@ -454,13 +450,13 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:176 (_threads_check_lib)"
-      - "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
-      - "C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+      - "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-qxkd5d"
-      binary: "C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-qxkd5d"
+      source: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-rxl0iq"
+      binary: "C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-rxl0iq"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -469,45 +465,45 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-qxkd5d'
+        Change Dir: 'C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-rxl0iq'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_16297.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_096d0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Р’РµСЂСЃРёСЏ MSBuild 17.13.9+e0f243f1e РґР»СЏ .NET Framework
-        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 16:30:31.
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 18.05.2025 21:17:22.
         
-        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qxkd5d\\cmTC_16297.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        РџСЂРѕРµРєС‚ "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rxl0iq\\cmTC_096d0.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
         PrepareForBuild:
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_16297.dir\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_096d0.dir\\Debug\\".
           РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qxkd5d\\Debug\\".
-          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_16297.dir\\Debug\\cmTC_16297.tlog\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rxl0iq\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_096d0.dir\\Debug\\cmTC_096d0.tlog\\".
         InitializeBuildStatus:
-          РЎРѕР·РґР°РЅРёРµ "cmTC_16297.dir\\Debug\\cmTC_16297.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
-          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_16297.dir\\Debug\\cmTC_16297.tlog\\unsuccessfulbuild".
+          РЎРѕР·РґР°РЅРёРµ "cmTC_096d0.dir\\Debug\\cmTC_096d0.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_096d0.dir\\Debug\\cmTC_096d0.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_16297.dir\\Debug\\\\" /Fd"cmTC_16297.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qxkd5d\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_096d0.dir\\Debug\\\\" /Fd"cmTC_096d0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rxl0iq\\CheckFunctionExists.c"
           РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.43.34808 РґР»СЏ x64
           (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
-          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_16297.dir\\Debug\\\\" /Fd"cmTC_16297.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qxkd5d\\CheckFunctionExists.c"
+          cl /c /I"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_096d0.dir\\Debug\\\\" /Fd"cmTC_096d0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rxl0iq\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qxkd5d\\Debug\\cmTC_16297.exe" /INCREMENTAL /ILK:"cmTC_16297.dir\\Debug\\cmTC_16297.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-qxkd5d/Debug/cmTC_16297.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Ivan/Desktop/Tests/build/CMakeFiles/CMakeScratch/TryCompile-qxkd5d/Debug/cmTC_16297.lib" /MACHINE:X64  /machine:x64 cmTC_16297.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthread.lib" [C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qxkd5d\\cmTC_16297.vcxproj]
-        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qxkd5d\\cmTC_16297.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) СЃ РѕС€РёР±РєРѕР№.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rxl0iq\\Debug\\cmTC_096d0.exe" /INCREMENTAL /ILK:"cmTC_096d0.dir\\Debug\\cmTC_096d0.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Ivan\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-rxl0iq/Debug/cmTC_096d0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/CMakeFiles/CMakeScratch/TryCompile-rxl0iq/Debug/cmTC_096d0.lib" /MACHINE:X64  /machine:x64 cmTC_096d0.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthread.lib" [C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rxl0iq\\cmTC_096d0.vcxproj]
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rxl0iq\\cmTC_096d0.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) СЃ РѕС€РёР±РєРѕР№.
         
         РћС€РёР±РєР° СЃР±РѕСЂРєРё.
         
-        "C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qxkd5d\\cmTC_16297.vcxproj" (С†РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) (1) ->
+        "C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rxl0iq\\cmTC_096d0.vcxproj" (С†РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) (1) ->
         (Р¦РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ Link) -> 
-          LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthread.lib" [C:\\Users\\Ivan\\Desktop\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qxkd5d\\cmTC_16297.vcxproj]
+          LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthread.lib" [C:\\Users\\Ivan\\Documents\\GitHub\\OS_Lab5\\Tests\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rxl0iq\\cmTC_096d0.vcxproj]
         
             РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
             РћС€РёР±РѕРє: 1
         
-        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.82
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.78
         
       exitCode: 1
 ...

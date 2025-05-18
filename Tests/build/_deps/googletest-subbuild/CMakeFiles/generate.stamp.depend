@@ -1,6 +1,8 @@
 # CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystem.cmake.in
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/ExternalProject.cmake
@@ -15,6 +17,6 @@ C:/Program Files/CMake/share/cmake-3.31/Modules/ExternalProject/shared_internal_
 C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake
-C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeFiles/3.31.5/CMakeSystem.cmake
-C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/CMakeLists.txt
-C:/Users/Ivan/Desktop/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake
+C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeFiles/3.31.5/CMakeSystem.cmake
+C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/CMakeLists.txt
+C:/Users/Ivan/Documents/GitHub/OS_Lab5/Tests/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake
