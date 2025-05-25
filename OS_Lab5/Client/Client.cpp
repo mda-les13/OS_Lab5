@@ -31,7 +31,7 @@ int main() {
         std::cin >> choice;
 
         if (choice == 3) {
-            int op = 2; // Команда выхода
+            int op = 2; // EXIT
             WriteFile(hPipe, &op, sizeof(op), NULL, NULL);
             break;
         }
@@ -40,37 +40,44 @@ int main() {
         std::cout << "Enter employee ID: ";
         std::cin >> num;
 
-        if (choice == 1) { // Чтение
-            int op = 0; // READ
+        int status;
+        if (choice == 1 || choice == 2) {
+            int op = (choice == 1) ? 0 : 1;
             WriteFile(hPipe, &op, sizeof(op), NULL, NULL);
             WriteFile(hPipe, &num, sizeof(num), NULL, NULL);
-            employee e;
-            DWORD dwRead;
-            ReadFile(hPipe, &e, sizeof(e), &dwRead, NULL);
-            std::cout << "Employee Data:\n"
-                << "ID: " << e.num << "\n"
-                << "Name: " << e.name << "\n"
-                << "Hours: " << e.hours << "\n";
-            std::cout << "\nPress Enter to continue...";
-            std::cin.get(); std::cin.get();
-        }
-        else if (choice == 2) { // Запись
-            int op = 1; // WRITE
-            WriteFile(hPipe, &op, sizeof(op), NULL, NULL);
-            WriteFile(hPipe, &num, sizeof(num), NULL, NULL);
-            employee current;
-            DWORD dwRead;
-            ReadFile(hPipe, &current, sizeof(current), &dwRead, NULL);
-            std::cout << "Current record:\n"
-                << "ID: " << current.num << "\n"
-                << "Name: " << current.name << "\n"
-                << "Hours: " << current.hours << "\n"
-                << "Enter new data (ID Name Hours): ";
-            std::cin >> current.num >> current.name >> current.hours;
-            WriteFile(hPipe, &current, sizeof(current), NULL, NULL);
-            std::cout << "Record updated successfully.\n";
-            std::cout << "\nPress Enter to continue...";
-            std::cin.get(); std::cin.get();
+
+            ReadFile(hPipe, &status, sizeof(status), NULL, NULL);
+            if (status == 1) {
+                std::cout << "File is currently in use by another client. Please try again later.\n";
+                continue;
+            }
+
+            if (op == 0) { // READ
+                employee e;
+                DWORD dwRead;
+                ReadFile(hPipe, &e, sizeof(e), &dwRead, NULL);
+                std::cout << "Employee Data:\n"
+                    << "ID: " << e.num << "\n"
+                    << "Name: " << e.name << "\n"
+                    << "Hours: " << e.hours << "\n";
+            }
+            else if (op == 1) { // WRITE
+                employee current;
+                DWORD dwRead;
+                ReadFile(hPipe, &current, sizeof(current), &dwRead, NULL);
+                std::cout << "Current record:\n"
+                    << "ID: " << current.num << "\n"
+                    << "Name: " << current.name << "\n"
+                    << "Hours: " << current.hours << "\n"
+                    << "Enter new data (ID Name Hours): ";
+                std::cin >> current.num >> current.name >> current.hours;
+                WriteFile(hPipe, &current, sizeof(current), NULL, NULL);
+                std::cout << "Record updated successfully. Press Enter to release the file...\n";
+                std::cin.get(); std::cin.get();
+            }
+
+            int confirm = 1;
+            WriteFile(hPipe, &confirm, sizeof(confirm), NULL, NULL);
         }
     }
 

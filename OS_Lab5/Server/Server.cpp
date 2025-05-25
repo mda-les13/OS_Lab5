@@ -2,8 +2,6 @@
 #include <iostream>
 #include <fstream>
 #include <map>
-#include <thread>
-#include <atomic>
 #include <tchar.h>
 
 struct employee {
@@ -12,108 +10,55 @@ struct employee {
     double hours;
 };
 
-// Структура для управления блокировкой записи
-struct RecordLock {
-    CRITICAL_SECTION cs;
-    CONDITION_VARIABLE readerCV;
-    CONDITION_VARIABLE writerCV;
-    int readers;
-    int writers_waiting;
-    bool writer;
-};
+// Глобальная блокировка файла
+HANDLE hFileMutex = nullptr;
 
-// Карта блокировок для каждой записи
-std::map<int, RecordLock*> recordLocks;
-CRITICAL_SECTION g_cs;
-
-// Глобальные переменные для отслеживания клиентов
-int activeClients = 0;
-CRITICAL_SECTION clientCountCS;
-bool allClientsDone = false;
-
-// Флаг завершения работы сервера
-std::atomic<bool> exitRequested(false);
-
-// Объект события для команды exit
-HANDLE hExitEvent = nullptr;
-
-// Инициализация блокировки для конкретной записи
-void InitializeRecordLock(int num) {
-    EnterCriticalSection(&g_cs);
-    if (recordLocks.find(num) == recordLocks.end()) {
-        RecordLock* lock = new RecordLock();
-        InitializeCriticalSection(&lock->cs);
-        InitializeConditionVariable(&lock->readerCV);
-        InitializeConditionVariable(&lock->writerCV);
-        lock->readers = 0;
-        lock->writers_waiting = 0;
-        lock->writer = false;
-        recordLocks[num] = lock;
-    }
-    LeaveCriticalSection(&g_cs);
+// Инициализация блокировки файла
+void InitializeFileLock() {
+    hFileMutex = CreateMutex(NULL, FALSE, NULL);
 }
 
-// Блокировка на чтение
-void AcquireReadLock(int num) {
-    InitializeRecordLock(num);
-    RecordLock* lock = recordLocks[num];
-    EnterCriticalSection(&lock->cs);
-    while (lock->writer || lock->writers_waiting > 0) {
-        SleepConditionVariableCS(&lock->readerCV, &lock->cs, INFINITE);
+// Блокировка файла
+bool AcquireFileLock(HANDLE hPipe) {
+    // Пытаемся захватить мьютекс
+    DWORD result = WaitForSingleObject(hFileMutex, INFINITE);
+
+    // Если успешно, отправляем клиенту статус "свободно"
+    if (result == WAIT_OBJECT_0) {
+        int status = 0; // Файл свободен
+        WriteFile(hPipe, &status, sizeof(status), NULL, NULL);
+        return true;
     }
-    lock->readers++;
-    LeaveCriticalSection(&lock->cs);
+
+    // Иначе отправляем статус "занято"
+    int status = 1; // Файл занят
+    WriteFile(hPipe, &status, sizeof(status), NULL, NULL);
+    return false;
 }
 
-void ReleaseReadLock(int num) {
-    RecordLock* lock = recordLocks[num];
-    EnterCriticalSection(&lock->cs);
-    lock->readers--;
-    if (lock->readers == 0 && lock->writers_waiting > 0) {
-        WakeConditionVariable(&lock->writerCV);
-    }
-    LeaveCriticalSection(&lock->cs);
+// Освобождение блокировки файла
+void ReleaseFileLock() {
+    ReleaseMutex(hFileMutex);
 }
 
-void AcquireWriteLock(int num) {
-    InitializeRecordLock(num);
-    RecordLock* lock = recordLocks[num];
-    EnterCriticalSection(&lock->cs);
-    lock->writers_waiting++;
-    while (lock->readers > 0 || lock->writer) {
-        SleepConditionVariableCS(&lock->writerCV, &lock->cs, INFINITE);
-    }
-    lock->writers_waiting--;
-    lock->writer = true;
-    LeaveCriticalSection(&lock->cs);
-}
-
-void ReleaseWriteLock(int num) {
-    RecordLock* lock = recordLocks[num];
-    EnterCriticalSection(&lock->cs);
-    lock->writer = false;
-    if (lock->writers_waiting > 0) {
-        WakeConditionVariable(&lock->writerCV);
-    }
-    else {
-        WakeAllConditionVariable(&lock->readerCV);
-    }
-    LeaveCriticalSection(&lock->cs);
-}
-
+// Обработчик клиента
 DWORD WINAPI ClientHandler(LPVOID lpParam) {
     HANDLE hPipe = (HANDLE)lpParam;
     DWORD dwRead;
     int op;
 
     while (ReadFile(hPipe, &op, sizeof(op), &dwRead, NULL)) {
-        if (op == 2) break; // Команда выхода
+        if (op == 2) break; // EXIT
 
         int num;
         ReadFile(hPipe, &num, sizeof(num), &dwRead, NULL);
 
-        if (op == 0) { // Чтение записи
-            AcquireReadLock(num);
+        // Попытка захватить файл
+        if (!AcquireFileLock(hPipe)) {
+            continue;
+        }
+
+        if (op == 0) { // READ
             employee e;
             bool found = false;
             std::ifstream file("employees.dat", std::ios::binary);
@@ -125,10 +70,8 @@ DWORD WINAPI ClientHandler(LPVOID lpParam) {
             }
             file.close();
             WriteFile(hPipe, found ? &e : new employee(), sizeof(employee), &dwRead, NULL);
-            ReleaseReadLock(num);
         }
-        else if (op == 1) { // Запись записи
-            AcquireWriteLock(num);
+        else if (op == 1) { // WRITE
             employee current;
             bool found = false;
             std::ifstream file("employees.dat", std::ios::binary);
@@ -153,46 +96,24 @@ DWORD WINAPI ClientHandler(LPVOID lpParam) {
                 }
             }
             file2.close();
-            ReleaseWriteLock(num);
         }
-    }
 
-    // Уменьшаем счётчик активных клиентов
-    EnterCriticalSection(&clientCountCS);
-    activeClients--;
-    if (activeClients == 0) {
-        allClientsDone = true;
+        // Ожидаем подтверждение от клиента (Enter)
+        int confirm = 0;
+        ReadFile(hPipe, &confirm, sizeof(confirm), &dwRead, NULL);
+
+        // Освобождаем файл
+        ReleaseFileLock();
     }
-    LeaveCriticalSection(&clientCountCS);
 
     DisconnectNamedPipe(hPipe);
     CloseHandle(hPipe);
     return 0;
 }
 
-// Поток ожидания команды exit
-void ExitInputThread() {
-    std::string command;
-    while (std::cin >> command) {
-        if (command == "stop") {
-            SetEvent(hExitEvent); // Сигналим событие
-            exitRequested = true;
-            break;
-        }
-    }
-}
-
 int main() {
-    // Инициализация критических секций
-    InitializeCriticalSection(&g_cs);
-    InitializeCriticalSection(&clientCountCS);
-
-    // Создание события для команды exit
-    hExitEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
-    if (!hExitEvent) {
-        std::cerr << "Failed to create exit event.\n";
-        return 1;
-    }
+    // Инициализация
+    InitializeFileLock();
 
     // Создание файла
     std::ofstream file("employees.dat", std::ios::binary);
@@ -236,27 +157,18 @@ int main() {
             continue;
         }
 
-        // Увеличиваем счётчик активных клиентов
-        EnterCriticalSection(&clientCountCS);
-        activeClients++;
-        LeaveCriticalSection(&clientCountCS);
-
         CloseHandle(pi.hProcess);
         CloseHandle(pi.hThread);
     }
-
-    // Запуск потока ожидания команды exit
-    std::thread exitThread(ExitInputThread);
 
     // Создание канала
     HANDLE hPipe = INVALID_HANDLE_VALUE;
     std::cout << "Server is waiting for client connections...\n";
 
-    // Цикл ожидания клиентов
-    while (!allClientsDone && !exitRequested) {
+    while (true) {
         hPipe = CreateNamedPipe(
             TEXT("\\\\.\\pipe\\EmployeePipe"),
-            PIPE_ACCESS_DUPLEX | FILE_FLAG_OVERLAPPED,
+            PIPE_ACCESS_DUPLEX,
             PIPE_TYPE_MESSAGE | PIPE_READMODE_MESSAGE | PIPE_WAIT,
             PIPE_UNLIMITED_INSTANCES,
             0, 0, INFINITE, NULL);
@@ -266,34 +178,15 @@ int main() {
             break;
         }
 
-        OVERLAPPED overlapped = {};
-        overlapped.hEvent = hExitEvent;
-
-        if (!ConnectNamedPipe(hPipe, &overlapped)) {
-            DWORD error = GetLastError();
-            if (error != ERROR_PIPE_CONNECTED && error != ERROR_IO_PENDING) {
-                std::cerr << "Failed to connect client. Error: " << error << std::endl;
-                CloseHandle(hPipe);
-                continue;
-            }
-
-            HANDLE waitHandles[] = { overlapped.hEvent, hExitEvent };
-            DWORD result = WaitForMultipleObjects(2, waitHandles, FALSE, INFINITE);
-
-            if (result == WAIT_OBJECT_0 + 1) {
-                CancelIo(hPipe);
-                DisconnectNamedPipe(hPipe);
-                CloseHandle(hPipe);
-                break;
-            }
+        if (!ConnectNamedPipe(hPipe, NULL)) {
+            std::cerr << "Failed to connect client. Error: " << GetLastError() << std::endl;
+            CloseHandle(hPipe);
+            continue;
         }
 
-        // Запуск обработчика клиента
         DWORD threadId;
         CreateThread(NULL, 0, ClientHandler, hPipe, 0, &threadId);
     }
-
-    exitThread.join();
 
     // Вывод обновленного файла
     std::cout << "\nModified employee records:\n";
@@ -304,11 +197,8 @@ int main() {
     }
     fin.close();
 
-    // Очистка
-    DeleteCriticalSection(&g_cs);
-    DeleteCriticalSection(&clientCountCS);
-    CloseHandle(hExitEvent);
+    CloseHandle(hFileMutex);
     std::cout << "\nServer exiting. Press Enter to close...";
-    std::cin.get(); std::cin.get(); // Ожидание завершения
+    std::cin.get(); std::cin.get();
     return 0;
 }
