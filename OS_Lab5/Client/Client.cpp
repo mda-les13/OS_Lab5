@@ -51,6 +51,8 @@ int main() {
                 << "ID: " << e.num << "\n"
                 << "Name: " << e.name << "\n"
                 << "Hours: " << e.hours << "\n";
+            std::cout << "\nPress Enter to continue...";
+            std::cin.get(); std::cin.get();
         }
         else if (choice == 2) { // Запись
             int op = 1; // WRITE
@@ -67,6 +69,8 @@ int main() {
             std::cin >> current.num >> current.name >> current.hours;
             WriteFile(hPipe, &current, sizeof(current), NULL, NULL);
             std::cout << "Record updated successfully.\n";
+            std::cout << "\nPress Enter to continue...";
+            std::cin.get(); std::cin.get();
         }
     }
 
