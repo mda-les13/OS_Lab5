@@ -10,35 +10,85 @@ struct employee {
     double hours;
 };
 
-// Глобальная блокировка файла
-HANDLE hFileMutex = nullptr;
+// Структура для управления блокировкой записи
+struct RecordLock {
+    CRITICAL_SECTION cs;
+    CONDITION_VARIABLE readerCV;
+    CONDITION_VARIABLE writerCV;
+    int readers;
+    int writers_waiting;
+    bool writer;
+};
 
-// Инициализация блокировки файла
-void InitializeFileLock() {
-    hFileMutex = CreateMutex(NULL, FALSE, NULL);
-}
+// Карта блокировок для каждой записи
+std::map<int, RecordLock*> recordLocks;
+CRITICAL_SECTION g_cs;
 
-// Блокировка файла
-bool AcquireFileLock(HANDLE hPipe) {
-    // Пытаемся захватить мьютекс
-    DWORD result = WaitForSingleObject(hFileMutex, INFINITE);
-
-    // Если успешно, отправляем клиенту статус "свободно"
-    if (result == WAIT_OBJECT_0) {
-        int status = 0; // Файл свободен
-        WriteFile(hPipe, &status, sizeof(status), NULL, NULL);
-        return true;
+// Инициализация блокировки для конкретной записи
+void InitializeRecordLock(int num) {
+    EnterCriticalSection(&g_cs);
+    if (recordLocks.find(num) == recordLocks.end()) {
+        RecordLock* lock = new RecordLock();
+        InitializeCriticalSection(&lock->cs);
+        InitializeConditionVariable(&lock->readerCV);
+        InitializeConditionVariable(&lock->writerCV);
+        lock->readers = 0;
+        lock->writers_waiting = 0;
+        lock->writer = false;
+        recordLocks[num] = lock;
     }
-
-    // Иначе отправляем статус "занято"
-    int status = 1; // Файл занят
-    WriteFile(hPipe, &status, sizeof(status), NULL, NULL);
-    return false;
+    LeaveCriticalSection(&g_cs);
 }
 
-// Освобождение блокировки файла
-void ReleaseFileLock() {
-    ReleaseMutex(hFileMutex);
+// Блокировка на чтение
+void AcquireReadLock(int num) {
+    InitializeRecordLock(num);
+    RecordLock* lock = recordLocks[num];
+    EnterCriticalSection(&lock->cs);
+    while (lock->writer || lock->writers_waiting > 0) {
+        SleepConditionVariableCS(&lock->readerCV, &lock->cs, INFINITE);
+    }
+    lock->readers++;
+    LeaveCriticalSection(&lock->cs);
+}
+
+// Освобождение блокировки на чтение
+void ReleaseReadLock(int num) {
+    RecordLock* lock = recordLocks[num];
+    EnterCriticalSection(&lock->cs);
+    lock->readers--;
+    if (lock->readers == 0 && lock->writers_waiting > 0) {
+        WakeConditionVariable(&lock->writerCV);
+    }
+    LeaveCriticalSection(&lock->cs);
+}
+
+// Блокировка на запись
+void AcquireWriteLock(int num) {
+    InitializeRecordLock(num);
+    RecordLock* lock = recordLocks[num];
+    EnterCriticalSection(&lock->cs);
+    lock->writers_waiting++;
+    while (lock->readers > 0 || lock->writer) {
+        SleepConditionVariableCS(&lock->writerCV, &lock->cs, INFINITE);
+    }
+    lock->writers_waiting--;
+    lock->writer = true;
+    LeaveCriticalSection(&lock->cs);
+}
+
+// Освобождение блокировки на запись
+void ReleaseWriteLock(int num) {
+    RecordLock* lock = recordLocks[num];
+    EnterCriticalSection(&lock->cs);
+    lock->writer = false;
+    if (lock->writers_waiting > 0) {
+        WakeConditionVariable(&lock->writerCV);
+    }
+    else {
+        WakeAllConditionVariable(&lock->readerCV);
+    }
+    LeaveCriticalSection(&lock->cs);
 }
 
 // Обработчик клиента
@@ -53,12 +103,8 @@ DWORD WINAPI ClientHandler(LPVOID lpParam) {
         int num;
         ReadFile(hPipe, &num, sizeof(num), &dwRead, NULL);
 
-        // Попытка захватить файл
-        if (!AcquireFileLock(hPipe)) {
-            continue;
-        }
-
         if (op == 0) { // READ
+            AcquireReadLock(num);
             employee e;
             bool found = false;
             std::ifstream file("employees.dat", std::ios::binary);
@@ -70,8 +116,15 @@ DWORD WINAPI ClientHandler(LPVOID lpParam) {
             }
             file.close();
             WriteFile(hPipe, found ? &e : new employee(), sizeof(employee), &dwRead, NULL);
+
+            // Ожидаем подтверждение от клиента (Enter)
+            int confirm = 0;
+            ReadFile(hPipe, &confirm, sizeof(confirm), &dwRead, NULL);
+
+            ReleaseReadLock(num);
         }
         else if (op == 1) { // WRITE
+            AcquireWriteLock(num);
             employee current;
             bool found = false;
             std::ifstream file("employees.dat", std::ios::binary);
@@ -96,14 +149,13 @@ DWORD WINAPI ClientHandler(LPVOID lpParam) {
                 }
             }
             file2.close();
+
+            // Ожидаем подтверждение от клиента (Enter)
+            int confirm = 0;
+            ReadFile(hPipe, &confirm, sizeof(confirm), &dwRead, NULL);
+
+            ReleaseWriteLock(num);
         }
-
-        // Ожидаем подтверждение от клиента (Enter)
-        int confirm = 0;
-        ReadFile(hPipe, &confirm, sizeof(confirm), &dwRead, NULL);
-
-        // Освобождаем файл
-        ReleaseFileLock();
     }
 
     DisconnectNamedPipe(hPipe);
@@ -112,8 +164,8 @@ DWORD WINAPI ClientHandler(LPVOID lpParam) {
 }
 
 int main() {
-    // Инициализация
-    InitializeFileLock();
+    // Инициализация критических секций
+    InitializeCriticalSection(&g_cs);
 
     // Создание файла
     std::ofstream file("employees.dat", std::ios::binary);
@@ -197,7 +249,7 @@ int main() {
     }
     fin.close();
 
-    CloseHandle(hFileMutex);
+    DeleteCriticalSection(&g_cs);
     std::cout << "\nServer exiting. Press Enter to close...";
     std::cin.get(); std::cin.get();
     return 0;
